@@ -1,0 +1,204 @@
+/* Reset start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+/* Reset end */
+
+/* Base classes start */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* Base classes end */
+
+/* Fonts and colors start */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+.color-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.color-bg-orange {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.color-medium-grey {
+  color: hsl(216, 12%, 54%);
+}
+
+.color-light-grey {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.card-bg-color {
+  background-color: hsl(216, 12%, 8%);
+}
+
+/* Fonts and colors end */
+
+body {
+  font: 400 15px/1.5 "Overpass", sans-serif;
+
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(0, 0%, 0%);
+}
+
+.card-container {
+  justify-content: center;
+
+  padding: 1.7rem;
+
+  min-width: 320px;
+
+  min-height: 375px;
+  max-height: 380px;
+
+  width: 29vw;
+  height: 50vh;
+
+  border-radius: 1.5rem;
+}
+
+.card-base .card-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background-color: hsl(213, 19%, 18%);
+
+  border-color: hsl(213, 19%, 18%);
+  border-style: solid;
+  border-radius: 50%;
+
+  display: flex;
+
+  padding: 0.7rem;
+}
+
+.card-base .text-title {
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-base .rating-form {
+  margin-top: 1rem;
+}
+
+.card-base .raiting-buttons-container {
+  justify-content: space-between;
+
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-base .raiting-buttons-container > button {
+  width: 3.3rem;
+  height: 3.3rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+
+  border-color: hsl(213, 19%, 18%);
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.card-base .submit-button {
+  letter-spacing: 0.2em;
+
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+/* Hover start */
+.card-base .raiting-buttons-container > button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card-base .submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+/* Hover end */
+
+/* Target start */
+.card-base .raiting-buttons-container > button:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+/* Target end */
+
+/* Media start */
+@media only screen and (max-width: 1024px) {
+  .card-container {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+  .card-base .raiting-buttons-container > button {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+  .card-container {
+    width: 90vw;
+  }
+  .card-base .raiting-buttons-container > button {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+/* Media end */
