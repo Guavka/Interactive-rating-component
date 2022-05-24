@@ -49,6 +49,10 @@ button {
   font-weight: 700;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .color-white {
   color: hsl(0, 0%, 100%);
 }
@@ -92,6 +96,11 @@ body {
   height: 50vh;
 
   border-radius: 1.5rem;
+}
+
+.card-base {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-base .card-logo {
@@ -146,6 +155,36 @@ body {
   border-radius: 1.5rem;
   padding: 1rem;
 }
+
+/* Card 2 start */
+.card-submit {
+  align-items: center;
+  display: none;
+}
+
+.card-submit .card-select {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+
+  border-radius: 1.5rem;
+  border-color: hsl(213, 19%, 18%);
+  border-style: solid;
+
+  padding: 0em 1.5em;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-submit .card-select p {
+  padding-top: 0.25em;
+}
+
+.card-submit .card-title {
+  margin-bottom: 0.5rem;
+}
+
+/* Card 2 end */
 
 /* Hover start */
 .card-base .raiting-buttons-container > button:hover {
